@@ -11,8 +11,15 @@
     "noarg": true,
     "undef": true,
     "unused": true,
-    "strict": true,
+    "strict": false,
     "trailing": true,
     "smarttabs": true,
-    "white": true
+    "white": true,
+    "globals": {
+        "$": false,
+        "jQuery": false,
+        "TimelineMax": false,
+        "Highcharts": false
+    },
+    "browser": true
 }

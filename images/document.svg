@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Your_Icon" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" height="100px" width="100px">
+<g>
+	<g>
+		<g>
+			<g>
+			</g>
+		</g>
+		<g>
+		</g>
+	</g>
+</g>
+<g>
+	<polygon points="68,5 68,17 80,17  "/>
+	<rect x="78.185" y="35.371" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -3.8237 68.7361)" width="5.741" height="7.226"/>
+	<polygon points="74.654,40.276 74.654,40.276 47.75,67.182 46.246,73.796 52.86,72.291 79.764,45.384  "/>
+	<path d="M70,62h-2.608L54.37,75.024L43,77.612V79H30v-3h12.667l2.35-10.328L48.689,62H30v-3h21.689l13.999-14H30v-3h38.688   L80,30.687V20H65V5H20v90h60V49.391L70,59.392V62z M30,25h40v3H30V25z"/>
+</g>
+</svg>

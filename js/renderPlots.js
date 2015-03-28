@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  $.getJSON( "slides/data/PostsFrequencies25.json", function(data) {
+  $.getJSON( "../data/PostsFrequencies25.json", function(data) {
     var container1 =  new Highcharts.Chart({
       chart: {
           renderTo: 'container1',
@@ -83,7 +83,7 @@ $(document).ready(function(){
   });
 
 
-      $.getJSON( "slides/data/MostFrequent.json", function(data) {
+      $.getJSON( "../data/MostFrequent.json", function(data) {
 
           data.synsetWords[17] = "peritoneal dialysis, pd";
           data.synsetWords[30] = "food";

@@ -5,11 +5,45 @@
     "ckd-is-a-challenge.html",
     "data.html",
     "data-2.html",
-    "methods.html",
+    {
+        "filename":"methods.html",
+        "attr": {
+             "data-transition":"zoom"
+         }
+    },
     "ontologies.html",
     "relationships.html",
     "steps-of-the-analysis.html",
-    "pre-processing.html",
+    {
+        "filename":"pre-processing-1.html",
+        "attr": {
+             "data-transition":"none"
+         }
+    },
+    {
+        "filename":"pre-processing-2.html",
+        "attr": {
+             "data-transition":"none"
+         }
+    },
+    {
+        "filename":"pre-processing-3.html",
+        "attr": {
+             "data-transition":"none"
+         }
+    },
+    {
+        "filename":"pre-processing-4.html",
+        "attr": {
+             "data-transition":"none"
+         }
+    },
+    {
+        "filename":"pre-processing-5.html",
+        "attr": {
+             "data-transition":"none"
+         }
+    },
     "word-sense-disambiguation.html",
     "merging-word-propagation.html",
     "thresholding.html",

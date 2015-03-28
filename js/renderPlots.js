@@ -95,13 +95,13 @@ $(document).ready(function(){
           title: {
               text: 'Most Frequent Synsets',
               style: {
-                  fontSize: '20px'
+                  fontSize: '18px'
               }
           },
           subtitle: {
               text: '(odered by number of words assigned to them)',
               style: {
-                  fontSize: '18px'
+                  fontSize: '16px'
               }
           },
           xAxis: {
@@ -111,13 +111,13 @@ $(document).ready(function(){
                   style: {
                      color: 'black',
                      fontWeight: 'bold',
-                     fontSize: '16px',
+                     fontSize: '14px',
                   }
               },
               labels: {
                   style: {
                      color: 'black',
-                     fontSize: '14px',
+                     fontSize: '9px',
                      fontWeight: 'bold'
                   }
               }
@@ -131,14 +131,14 @@ $(document).ready(function(){
                   style: {
                      color: 'black',
                      fontWeight: 'bold',
-                     fontSize: '16px',
+                     fontSize: '14px',
                   }
               },
               labels: {
                   overflow: 'justify',
                   style: {
                      color: 'black',
-                     fontSize: '14px',
+                     fontSize: '9px',
                      fontWeight: 'bold'
                   }
               }

@@ -2,7 +2,7 @@
   "name": "insights-from-kidney-space",
   "version": "0.1.0",
   "dependencies": {
-    "reveal.js": "~2.6.1",
-    "reveal-highlight-themes": "~8.3.0"
+    "reveal.js": "3.0.0",
+    "reveal-highlight-themes": "8.4.0"
   }
 }

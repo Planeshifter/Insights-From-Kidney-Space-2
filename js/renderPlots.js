@@ -1,9 +1,9 @@
 $(document).ready(function(){
 
   $.getJSON( "../data/PostsFrequencies25.json", function(data) {
-    var container1 =  new Highcharts.Chart({
+
+     $('#container1').highcharts({
       chart: {
-          renderTo: 'container1',
           type: 'column'
       },
       title: {

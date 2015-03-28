@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Insights from Kidney Space</title>
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="bower_components/reveal.js/css/reveal.min.css">
+
+        <link rel="stylesheet" href="bower_components/reveal.js/css/theme/simple.css" id="theme">
+
+        <link rel="stylesheet" href="css/custom.css">
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="bower_components/reveal-highlight-themes/styles/zenburn.css" id="highlight-theme">
+
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script>
+          if( window.location.search.match( /print-pdf/gi ) ) {
+            var link = document.createElement( 'link' );
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                link.href = 'bower_components/reveal.js/css/print/pdf.css';
+                document.getElementsByTagName( 'head' )[0].appendChild( link );
+            }
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <div class="slides">
+
+                
+                    
+                        
+    <section data-html="slides/index.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/the-landscape.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/problem-of-language.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/ckd-is-a-challenge.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/data.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/data-2.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/methods.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/ontologies.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/relationships.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/steps-of-the-analysis.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/pre-processing.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/word-sense-disambiguation.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/merging-word-propagation.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/thresholding.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/analysis.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/results.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/results-2.html"></section>
+
+
+                    
+                    
+                
+            </div>
+
+        </div>
+
+        <script type="text/javascript" src="https://www.draw.io/embed.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script src="http://code.highcharts.com/highcharts.js"></script>
+        <script src="http://code.highcharts.com/modules/exporting.js"></script>
+        <script src="http://underscorejs.org/underscore-min.js"></script>
+        <script src="js/renderPlots.js"></script>
+        <script src="bower_components/reveal.js/lib/js/head.min.js"></script>
+        <script src="bower_components/reveal.js/js/reveal.min.js"></script>
+        <script>
+            // Configure Reveal
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: false,
+                slideNumber: true,
+                transition: 'zoom',
+                backgroundTransition: 'convex', // none/fade/slide/convex/concave/zoom
+
+                math: {
+                    mathjax: 'http://cdn.mathjax.org/mathjax/latest/MathJax.js',
+                    config: 'TeX-AMS_HTML-full' // See http://docs.mathjax.org/en/latest/config-files.html
+                },
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'bower_components/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'bower_components/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'bower_components/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'bower_components/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'bower_components/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'bower_components/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+                    // { src: 'bower_components/reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+                    //{ src: 'bower_components/reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+
+                    { src: 'js/loadhtmlslides.js', condition: function() { return !!document.querySelector( '[data-html]' ); } }
+                ]
+            });
+        </script>
+    </body>
+
+</html>

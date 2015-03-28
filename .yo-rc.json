@@ -1,0 +1,11 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "Insights from Kidney Space",
+    "packageVersion": "0.1.0",
+    "revealTheme": "simple",
+    "useSass": false,
+    "deployToGithubPages": true,
+    "githubUsername": "Planeshifter",
+    "githubRepository": "https://github.com/Planeshifter/Insights-From-Kidney-Space-2.git"
+  }
+}

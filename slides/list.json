@@ -6,43 +6,55 @@
     "data.html",
     "data-2.html",
     {
-        "filename":"methods.html",
+        "filename": "methods.html",
         "attr": {
-             "data-transition":"zoom"
-         }
+            "data-transition": "zoom"
+        }
     },
-    "ontologies.html",
-    "relationships.html",
+    {
+        "filename": "ontologies.html",
+        "attr": {
+            "data-transition": "none"
+        }
+    },
+    {
+        "filename": "ontologies-2.html",
+        "attr": {
+            "data-transition": "none"
+        }
+    },
+    "wordnet.html",
+    "semantic-relationships.html",
     "steps-of-the-analysis.html",
     {
-        "filename":"pre-processing-1.html",
+        "filename": "pre-processing-1.html",
         "attr": {
-             "data-transition":"none"
-         }
+            "data-transition": "none"
+        }
     },
     {
-        "filename":"pre-processing-2.html",
+        "filename": "pre-processing-2.html",
         "attr": {
-             "data-transition":"none"
-         }
+            "data-transition": "none"
+        }
     },
     {
-        "filename":"pre-processing-3.html",
+        "filename": "pre-processing-3.html",
         "attr": {
-             "data-transition":"none"
-         }
+            "data-transition": "none"
+        }
     },
     {
-        "filename":"pre-processing-4.html",
+        "filename": "pre-processing-4.html",
         "attr": {
-             "data-transition":"none"
-         }
+            "data-transition": "none"
+        }
     },
     {
-        "filename":"pre-processing-5.html",
+        "filename": "pre-processing-5.html",
         "attr": {
-             "data-transition":"none"
-         }
+            "data-transition": "none"
+        }
     },
     "word-sense-disambiguation.html",
     "merging-word-propagation.html",

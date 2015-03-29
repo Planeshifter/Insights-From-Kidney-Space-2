@@ -1,12 +1,50 @@
 $(document).ready( function() {
 
     $("#timebar").click( function() {
-        var tl = new TimelineMax();
+
+        function timelineDone(){
+            var tl2 = new TimelineMax();
+            tl2.pause();
+            var formulare = document.getElementsByClassName("formular");
+            tl2.staggerTo(formulare, 1, {opacity: 1}, 0.05, "start");
+            tl2.play();
+        }
+
+        var i, s, pos;
+        var tl = new TimelineMax({onComplete:timelineDone});
         tl.pause();
+        for ( i = 0; i < 11; i++ ) {
+            pos = (i * 10) + "%";
+            s = '<div class="takt" style="left:' + pos + '"></div>';
+            $("#timebar").append(s);
+        }
+
+        for ( i = 0; i < 11; i++ ) {
+            pos = (i * 10) + "%";
+            s = '<div class="takt2" style="left:' + pos + '"></div>';
+            $("#timebar").append(s);
+        }
+
+        for ( i = 0; i < 3; i++ ) {
+            pos = ( (i + 1) * 25 ) + "%";
+            s = '<div class="formular" style="left:' + pos + '"><img class="bare" src="images/form_head.svg"></div>';
+            $("#timebar").append(s);
+        }
+
+        for ( i = 0; i < 25; i++ ) {
+            pos = ( (i * 4) + 2 * Math.random() - 0.5 )  + "%";
+            s = '<div class="formular" style="left:' + pos + ';top: 80px;"><img class="bare" src="images/speech_bubble2.svg"></div>';
+            $("#timebar").append(s);
+        }
 
         var timelines = document.getElementsByClassName("timeline");
-        tl.staggerTo(timelines, 5, {width:"100%"}, 0.5);
+        var takts = document.getElementsByClassName("takt");
+        var takts2 = document.getElementsByClassName("takt2");
+        tl.staggerTo(timelines, 5, {width:"100%"}, 0.5, "start");
+        tl.staggerTo(takts, 5, {opacity: 1}, 0.5, "start");
+        tl.staggerTo(takts2, 5, {opacity: 1}, 0.5, "start");
         tl.play();
+
     });
 
     $("#landscape").click( function() {
@@ -83,7 +121,7 @@ $(document).ready( function() {
         }
 
         var forums = [];
-        svgs = [];
+        var svgs = [];
         var forumPositions = [
         {
             left: '16%',
@@ -119,7 +157,6 @@ $(document).ready( function() {
                 var o = svg.getSVGDocument();
                 return o.getElementsByTagName("path")[0];
             });
-            console.log(svgs);
             tl.to(svgs, 5, {fill: "rgb(0, 80, 200)"}, "end");
             tl.to(clouds, 5, {opacity:0}, "end");
             tl.play();

@@ -19,7 +19,8 @@
         "$": false,
         "jQuery": false,
         "TimelineMax": false,
-        "Highcharts": false
+        "Highcharts": false,
+        "MathJax": false
     },
     "browser": true
 }

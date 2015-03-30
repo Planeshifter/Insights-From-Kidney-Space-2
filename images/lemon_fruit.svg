@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="36px"
+   height="36px"
+   viewBox="1.8 -3.6 36.0 48.6"
+   version="1.1"
+   id="svg4166"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="lemon_fruit.svg">
+  <metadata
+     id="metadata4182">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1855"
+     inkscape:window-height="1056"
+     id="namedview4180"
+     showgrid="false"
+     inkscape:zoom="6.5555556"
+     inkscape:cx="-8.8474576"
+     inkscape:cy="18"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Fruits" />
+  <title
+     id="title4168">lemon</title>
+  <description
+     id="description4170">Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+  <defs
+     id="defs4172" />
+  <g
+     id="Fruits"
+     stroke="none"
+     stroke-width="1"
+     fill="none"
+     fill-rule="evenodd"
+     sketch:type="MSPage">
+    <path
+       d="M21.8615283,35.4722707 C28.8325887,33.5287807 34,26.4432796 34,18 C34,9.78484645 29.1080494,2.85509195 22.4225579,0.696447291 L22.4225579,0.696447291 C22.2252616,0.387559505 21.9818352,0.0143736659 21.746458,-0.377836186 C21.17773,-1.32551014 19.7149005,-2 18,-2 C16.4997163,-2 15.1923476,-1.48377085 14.5078156,-0.720013696 C14.3464067,-0.53992391 13.9156628,0.108830701 13.5246107,0.713617233 C6.8661942,2.89163452 2,9.80650158 2,18 C2,26.4473837 7.17243607,33.5356685 14.1486385,35.4751011 C14.3605866,35.6672733 14.5780097,35.8973453 14.7779948,36.1766965 C15.5403043,37.2415366 17.4615884,38.1240235 18,38.1240234 C18.5384116,38.1240234 20.4099936,37.2050781 21.2006245,36.1766965 C21.4131101,35.9003143 21.6413499,35.6683222 21.8615283,35.4722707 Z"
+       id="lemon"
+       fill="#000000"
+       sketch:type="MSShapeGroup"
+       transform="translate(18.000000, 18.000000) rotate(45.000000) translate(-18.000000, -18.000000) "
+       style="fill:#00b000;fill-opacity:1" />
+  </g>
+</svg>

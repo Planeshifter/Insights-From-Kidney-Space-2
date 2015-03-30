@@ -1,5 +1,173 @@
 $(document).ready( function() {
 
+    function finishDisambiguation() {
+        var math = MathJax.Hub.getAllJax("carDudeSimilarity")[0];
+        MathJax.Hub.Queue(["Text",math,"\\sum \\max \\operatorname{sim}()=0.8"]);
+
+        var tl = new TimelineMax();
+        var lemonKidneySim = document.getElementById("lemonKidneySimilarity");
+        var carDudeSim = document.getElementById("carDudeSimilarity");
+        var lemonSim = document.getElementById("lemonSimilarity");
+
+        var lemonTxt = document.getElementById("lemon");
+        var beanTxt = document.getElementById("bean");
+        var kidneyTxt = document.getElementById("kidney");
+
+        tl.pause();
+
+        var c3 = document.getElementById("c3");
+
+        tl.to(lemonKidneySim, 3, {opacity: 0}, "zero");
+        tl.to(c3, 3, {opacity:0}, "zero");
+
+        var auto = document.getElementById("lemonCarPic");
+        var lemon = document.getElementById("lemonFruitPic");
+
+        var timeOne = 3;
+        tl.to( lemon, timeOne, {opacity: 1} ,"one");
+        tl.to( auto, timeOne, {opacity: 0.2} ,"one");
+        tl.to( carDudeSim, timeOne, {background: "transparent"}, "one");
+
+        var timeTwo = 3;
+        tl.to( auto, timeTwo, {opacity: 0} ,"two");
+        tl.to( lemonKidneySim, timeTwo, {opacity: 0} ,"two");
+        tl.to( lemonSim, timeTwo, {opacity: 0} ,"two");
+        tl.to( carDudeSim, timeTwo, {opacity: 0} ,"two");
+
+        var timeThree = 3;
+        var c2 = document.getElementById("c2");
+        var bean = document.getElementById("beanFruitPic");
+        tl.to( lemonTxt, 3, {color: "rgba(0, 80, 200, 0.7)"}, "twohalf");
+        tl.to( beanTxt, 3, {color: "rgb(255, 128, 0)"},"twohalf");
+
+        tl.to( c2, timeThree, {opacity: 1}, "three" );
+        tl.to( bean, timeThree, {opacity: 1}, "three" );
+
+        var timeFour = 3;
+        tl.to( beanTxt, timeFour, {color: "rgba(0, 80, 200, 0.7)"}, "four");
+        tl.to( kidneyTxt, timeFour, {color: "rgb(255, 128, 0)"}, "four");
+        tl.to( c3, timeFour, {opacity: 1}, "four" );
+
+        tl.play();
+    }
+
+    function continueDisambiguation() {
+        var math = MathJax.Hub.getAllJax("lemonSimilarity")[0];
+        MathJax.Hub.Queue(["Text",math,"\\sum \\max \\operatorname{sim}()=1.1"]);
+
+        math = MathJax.Hub.getAllJax("lemonDudeSimilarity")[0];
+        MathJax.Hub.Queue(["Text",math,"\\operatorname{sim}() = 0.1"]);
+
+        var tl = new TimelineMax({onComplete: finishDisambiguation });
+        tl.pause();
+        var c2 = document.getElementById("c2");
+        var c3 = document.getElementById("c3");
+        var dude = document.getElementById("beanDudePic");
+        var bean = document.getElementById("beanFruitPic");
+        var auto = document.getElementById("lemonCarPic");
+        var lemon = document.getElementById("lemonFruitPic");
+        var lemonSim = document.getElementById("lemonSimilarity");
+        var lemonDudeSim = document.getElementById("lemonDudeSimilarity");
+        var lemonKidneySim = document.getElementById("lemonKidneySimilarity");
+        var carDudeSim = document.getElementById("carDudeSimilarity");
+
+        var timeOne = 3;
+        tl.to( lemon, timeOne, {opacity: 0.25}, "zero" );
+        tl.to( lemonKidneySim, timeOne, {opacity: 0}, "zero" );
+        tl.to( c3, timeOne, {opacity: 0}, "zero");
+
+        tl.to( lemonDudeSim, 0, {top: "40%"}, "pre");
+        tl.to( auto, 3, {opacity: 1}, "pre" );
+
+        var timeTwo = 3;
+        tl.to( c2, timeTwo, {opacity: 1}, "two");
+        tl.to( lemonDudeSim, timeTwo, {opacity: 1}, "two");
+        tl.to( bean, timeTwo, {opacity: 1},"two" );
+
+        var threeTime = 3;
+        tl.to( bean, threeTime, {opacity: 0},"three" );
+        tl.to( dude, threeTime, {opacity: 1}, "three");
+        tl.to( carDudeSim, threeTime, {opacity: 1}, "three");
+        tl.to( lemonKidneySim, threeTime, {top: "40%"}, "three" );
+
+        var fourTime = 3;
+        tl.to( carDudeSim, fourTime, {background: "orange"}, "four");
+        tl.to( lemonDudeSim, fourTime, {opacity: 0, top: "40%"}, "four");
+        tl.to( dude, fourTime, {opacity: 0}, "four");
+        tl.to( c2, fourTime, {opacity: 0}, "four");
+
+        var fiveTime = 3;
+        tl.to( c3, fiveTime, {opacity: 1}, "five");
+        tl.to( lemonKidneySim, fiveTime, {opacity: 1}, "five");
+
+        tl.play();
+
+    }
+
+    function startDisambiguation() {
+        var tl = new TimelineMax({onComplete: continueDisambiguation });
+        tl.pause();
+        var c2 = document.getElementById("c2");
+        var c3 = document.getElementById("c3");
+        var dude = document.getElementById("beanDudePic");
+        var bean = document.getElementById("beanFruitPic");
+
+        tl.to( c2, 1, {opacity: 0}, "zero" );
+        tl.to( c3, 1, {opacity: 0}, "zero" );
+        tl.to( dude, 1, {opacity: 0}, "zero");
+
+        var auto = document.getElementById("lemonCarPic");
+        var lemonSim = document.getElementById("lemonSimilarity");
+        var lemonDudeSim = document.getElementById("lemonDudeSimilarity");
+        var lemonKidneySim = document.getElementById("lemonKidneySimilarity");
+
+        tl.to( auto, 1, {opacity: 0}, "one");
+
+        var twoTime = 3;
+        tl.to( c2, twoTime, {opacity: 1}, "two");
+        tl.to( lemonSim, twoTime, {opacity: 1}, "two");
+
+        var threeTime = 3;
+        tl.to( bean, threeTime, {opacity: 0},"three" );
+        tl.to( dude, threeTime, {opacity: 1}, "three");
+        tl.to( lemonDudeSim, threeTime, {opacity: 1}, "three");
+
+        var fourTime = 3;
+        tl.to( lemonSim, fourTime, {background: "orange"}, "four");
+        tl.to( lemonDudeSim, fourTime, {opacity: 0}, "four");
+        tl.to( dude, fourTime, {opacity: 0}, "four");
+        tl.to( c2, fourTime, {opacity: 0}, "four");
+
+        var fiveTime = 3;
+        tl.to( c3, fiveTime, {opacity: 1}, "five");
+        tl.to( lemonKidneySim, fiveTime, {opacity: 1}, "five");
+
+        $("#disambiguationEquation").hide();
+        $("#disambiguationEquationColored").fadeIn();
+
+        tl.play();
+    }
+
+    var counter = 0;
+    $("#disambiguationExample").click( function() {
+        switch( counter ) {
+            case 0:
+                $(".stopword").css("opacity", 0);
+                $("#lemon").html('lemon<span class="sub">[1]</span>');
+                $("#bean").html('bean<span class="sub">[2]</span>');
+                $("#kidney").html('kidney<span class="sub">[3]</span>');
+            break;
+            case 1:
+                $("#disambiguation").fadeIn( 1000 );
+            break;
+            case 2:
+                $("#lemon").css("color", "rgb(255, 128, 0)");
+                startDisambiguation();
+            break;
+        }
+        counter += 1;
+    });
+
     $("#timebar").click( function() {
 
         function timelineDone(){

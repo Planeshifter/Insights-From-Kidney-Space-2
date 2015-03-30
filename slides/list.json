@@ -57,9 +57,42 @@
         }
     },
     "word-sense-disambiguation.html",
-    "merging-word-propagation.html",
-    "thresholding.html",
+    {
+        "filename": "merging-word-propagation.html",
+        "attr": {
+            "data-transition": "fade"
+        }
+    },
+    {
+        "filename": "merging-word-propagation-2.html",
+        "attr": {
+            "data-transition": "fade"
+        }
+    },
+    {
+        "filename": "merging-word-propagation-3.html",
+        "attr": {
+            "data-transition": "fade"
+        }
+    },
+    {
+        "filename": "thresholding.html",
+        "attr": {
+            "data-transition": "fade"
+        }
+    },
+    {
+        "filename": "thresholding-2.html",
+        "attr": {
+            "data-transition": "fade"
+        }
+    },
     "analysis.html",
+    [
+        "analysis-2.html",
+        "analysis-2b.html"
+    ],
+    "analysis-3.html",
     "results.html",
     "results-2.html"
 ]

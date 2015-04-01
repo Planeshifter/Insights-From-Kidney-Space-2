@@ -188,3 +188,40 @@
     left: -10%;
     opacity: 1;
 }
+
+.tables table {
+    float: left;
+    font-size: 0.55em;
+    margin:6px;
+}
+
+.tables table th {
+    text-align: center;
+}
+
+h1 {
+    color: #BF381A !important;
+}
+
+.box {
+    background-color: lightgrey;
+    border: 2px solid lightblue;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+}
+
+.definition {
+    background-color: lightgrey;
+    border: 2px solid lightblue !important;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+    margin: 0.5em 0.5em !important;
+    padding: 0.5em 1.5em !important;
+    text-align: left;
+}
+
+.definition p {
+    color: #586e75;
+    margin: auto;
+    text-align: left;
+    font-size: 0.7em;
+    word-wrap: break-word;
+}

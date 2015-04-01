@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "dependencies": {
     "reveal.js": "3.0.0",
-    "reveal-highlight-themes": "8.4.0"
+    "reveal-highlight-themes": "8.4.0",
+    "bootstrap": "~3.3.4"
   }
 }

@@ -1,14 +1,17 @@
-<h2>Analysis - Step 2</h2>
+<h2>Bivariate Analysis</h2>
 
-<h3>Synset Co-Occurence</h3>
-<p style="text-align:left">Let</p>
-<ul>
-    <li>$X_i = \{0,1\}$ indicator of observing synset $X$ in doc $i$</li>
-    <li>$Y_i = \{0,1\}$ indicator of observing synset $Y$ in doc $i$</li>
-</ul>
-<p style="text-align:left">Pearson Correlation / Phi Coefficient:</p>
-<ul>
-  <li>$\rho_{X,Y} = \frac{\mathbb{E}\left[ XY \right] - \mathbb{E}\left[ X \right] \mathbb{E}\left[Y\right]}{\sqrt{\mathbb{V}\left[ X \right]  \mathbb{V}\left[ Y \right]} }
-    \implies \hat \rho_{X,Y} = \frac{n_{11} n_{00} - n_{10} n_{01}}{\sqrt{n_{1\cdot}n_{0\cdot}n_{\cdot1}n_{\cdot 0}}}
-    $</li>
-</ul>
+<div class="fragment">
+    <p style="text-align:left">Synset Correlation.</p>
+    <ul>
+        <li>$X_i = \{0,1\}$ indicator of observing synset $X$ in doc $i$</li>
+        <li>$Y_i = \{0,1\}$ indicator of observing synset $Y$ in doc $i$</li>
+    </ul>
+</div>
+<div class="fragment">
+    <p style="text-align:left">Pearson Correlation / Phi Coefficient:</p>
+    <ul>
+      <li>$\rho_{X,Y} = \frac{\mathbb{E}\left[ XY \right] - \mathbb{E}\left[ X \right] \mathbb{E}\left[Y\right]}{\sqrt{\mathbb{V}\left[ X \right]  \mathbb{V}\left[ Y \right]} }
+        \implies \hat \rho_{X,Y} = \frac{n_{11} n_{00} - n_{10} n_{01}}{\sqrt{n_{1\cdot}n_{0\cdot}n_{\cdot1}n_{\cdot 0}}}
+        $</li>
+    </ul>
+</div>

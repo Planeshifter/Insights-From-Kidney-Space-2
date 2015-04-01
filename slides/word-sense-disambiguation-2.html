@@ -1,0 +1,37 @@
+<h2>Similarity Measure</h2>
+
+<div id="disambiguationEquation">
+$$
+{\scriptstyle
+\hat c_i = \arg \max_{c_{1} \in C_i} \sum_{w_j \in \mathcal{W}(i)} \max_{c_{2}\in C_j} \color{lorange}{\operatorname{sim} \left( c_{1}, c_{2} \right)}
+}
+$$
+</div>
+
+<div class="definition">
+<p style="text-align:left">Jiang-Conrath Similarity Measure:</p>
+$$
+{\scriptstyle
+    {\color{lorange}\operatorname{sim}_{JC} \left( c_1, c_2 \right)} = - IC \left( c_1 \right) - IC \left( c_2 \right) + 2 \times IC(\operatorname{lcs} \left( c_1, c_2 \right) )
+}
+$$
+</div>
+
+<div style="float:left; width:40%;">
+    <div class="definition fragment" style="width:90%">
+        <p>
+            Information Content of Concept $c$:
+            $$IC \left( c \right) = - \log P(c)$$
+        </p>
+    </div>
+
+    <div class="definition fragment" style="width:90%">
+        <p>
+            Lowest common subsumer $\operatorname{lcs} \left( c_1, c_2 \right)$: Lowest node in tree that subsumes (is hypernym of) both
+            $c_1$ and $c_2$.
+        </p>
+    </div>
+</div>
+<div class="fragment" style="float:right;width:50%; align:right; margin: 0.2em;">
+    <img class="bare" src="images/conceptTree.png"></img>
+</div>

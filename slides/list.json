@@ -1,14 +1,16 @@
 [
     "index.html",
     "the-landscape.html",
+    "the-problem.html",
     "problem-of-language.html",
-    "ckd-is-a-challenge.html",
+    "ckd.html",
+    "ckd-2.html",
     "data.html",
     "data-2.html",
     {
         "filename": "methods.html",
         "attr": {
-            "data-transition": "zoom"
+            "data-background": "#A0D8F1"
         }
     },
     {
@@ -24,8 +26,20 @@
         }
     },
     "wordnet.html",
+    "synset.html",
     "semantic-relationships.html",
-    "steps-of-the-analysis.html",
+    {
+        "filename": "semantic-relationships-2.html",
+        "attr" : {
+            "data-background": "images/DoctorPlot.png"
+        }
+    },
+    {
+        "filename": "steps-of-the-analysis.html",
+        "attr": {
+            "data-background": "#A0D8F1"
+        }
+    },
     {
         "filename": "pre-processing-1.html",
         "attr": {
@@ -56,7 +70,56 @@
             "data-transition": "none"
         }
     },
-    "word-sense-disambiguation.html",
+    {
+        "filename": "word-sense-disambiguation.html",
+        "attr": {
+            "data-transition": "fade"
+        }
+    },
+    {
+        "filename":"word-sense-disambiguation-2.html",
+        "attr": {
+            "data-transition": "fade"
+        }
+    },
+    {
+        "filename":"word-sense-disambiguation-3.html",
+        "attr": {
+            "data-transition": "fade"
+        }
+    },
+    {
+        "filename":"word-sense-disambiguation-4.html",
+        "attr": {
+            "data-transition": "fade"
+        }
+    },
+    {
+        "filename":"word-sense-disambiguation-5.html",
+        "attr": {
+            "data-transition": "none"
+        }
+    },
+    {
+        "filename":"word-sense-disambiguation-6.html",
+        "attr": {
+            "data-transition": "none"
+        }
+    },
+    [
+        {
+            "filename":"disambiguation-performance.html",
+            "attr": {
+                "data-transition": "fade"
+            }
+        },
+        {
+            "filename":"disambiguation-performance-b.html",
+            "attr": {
+                "data-transition": "fade"
+            }
+        }
+    ],
     {
         "filename": "merging-word-propagation.html",
         "attr": {
@@ -87,12 +150,24 @@
             "data-transition": "fade"
         }
     },
-    "analysis.html",
+    {
+        "filename": "analysis.html",
+        "attr": {
+            "data-background": "#A0D8F1"
+        }
+    },
+    "analysis-1.html",
     [
         "analysis-2.html",
         "analysis-2b.html"
     ],
     "analysis-3.html",
-    "results.html",
-    "results-2.html"
+    {
+        "filename": "results.html",
+        "attr": {
+            "data-background": "#A0D8F1"
+        }
+    },
+    "results-2.html",
+    "results-3.html"
 ]

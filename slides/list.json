@@ -2,19 +2,76 @@
     "index.html",
     "the-landscape.html",
     "the-problem.html",
-    "problem-of-language.html",
+    [
+        {
+            "filename": "problem-of-language.html",
+            "attr": {
+                "style":"top: 0px; display: block;",
+                "data-transition":"none"
+            }
+        },
+        {
+            "filename": "problem-of-language-2.html",
+            "attr": {
+                "style":"top: 0px; display: block;",
+                "data-transition":"none"
+            }
+        },
+        {
+            "filename": "problem-of-language-2b.html",
+            "attr": {
+                "style":"top: 0px; display: block;",
+                "data-transition":"none"
+            }
+        },
+        {
+            "filename": "problem-of-language-3.html",
+            "attr": {
+                "style":"top: 0px; display: block;",
+                "data-transition":"none"
+            }
+        }
+    ],
+    "the-problem-ckd.html",
     "ckd.html",
     "ckd-2.html",
-    "data.html",
+    {
+        "filename": "data-intro-1.html",
+        "attr" : {
+            "data-transition":"fade"
+        }
+    },
+    {
+        "filename": "data-intro-2.html",
+        "attr" : {
+            "data-background":"images/DavitaForumPicture.png",
+            "data-background-transition":"zoom",
+            "data-transition":"fade"
+        }
+    },
+    {
+        "filename": "data.html",
+        "attr" : {
+            "data-transition":"fade"
+        }
+    },
     "data-2.html",
     {
         "filename": "methods.html",
         "attr": {
-            "data-background": "#A0D8F1"
+            "data-background": "#586e75"
         }
     },
     {
-        "filename": "ontologies.html",
+        "filename": "ontologies-0.html",
+        "attr": {
+            "data-transition": "none",
+            "data-background": "images/ontology-wisdom-3.png",
+            "data-background-transition": "convex"
+        }
+    },
+    {
+        "filename": "ontologies-1.html",
         "attr": {
             "data-transition": "none"
         }
@@ -37,7 +94,7 @@
     {
         "filename": "steps-of-the-analysis.html",
         "attr": {
-            "data-background": "#A0D8F1"
+            "data-background": "#586e75"
         }
     },
     {
@@ -153,7 +210,7 @@
     {
         "filename": "analysis.html",
         "attr": {
-            "data-background": "#A0D8F1"
+            "data-background": "#586e75"
         }
     },
     "analysis-1.html",
@@ -165,9 +222,13 @@
     {
         "filename": "results.html",
         "attr": {
-            "data-background": "#A0D8F1"
+            "data-background": "#586e75"
         }
     },
     "results-2.html",
-    "results-3.html"
+    "results-3.html",
+    "results-4.html",
+    "results-5.html",
+    "results-6.html",
+    "end.html"
 ]

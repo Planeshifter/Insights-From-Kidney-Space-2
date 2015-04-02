@@ -56,14 +56,6 @@
 
         </div>
 
-        <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-          tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
-          TeX: { extensions: ["color.js"] }
-        });
-        </script>
-        <script type="text/javascript" src="bower_components/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
         <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
         <script src="js/renderAnimation.js"></script>
@@ -99,9 +91,17 @@
                     // { src: 'bower_components/reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
                     //{ src: 'bower_components/reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
 
-                    { src: 'js/loadhtmlslides.js', condition: function() { return !!document.querySelector( '[data-html]' ); } }
+                    { src: 'js/loadhtmlslides.js', condition: function() { return !!document.querySelector( '[data-html]' ); } },
+
                 ]
             });
+        </script>
+        <script type="text/javascript" src="bower_components/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+          TeX: { extensions: ["color.js"] }
+        });
         </script>
     </body>
 

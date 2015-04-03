@@ -6,3 +6,222 @@
     border: 0 !important;
     box-shadow: 0 0 0 rgba(0, 0, 0, 0) !important;
 }
+
+#landscape {
+    width: 100%;
+    height: 240%;
+    position: absolute;
+    overflow: hidden;
+}
+
+#timebar {
+    width: 100%;
+    height: 60%;
+    top: 350%;
+    position: absolute;
+}
+
+#disambiguationExample {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 100%;
+    height: 40%;
+    font-size: 30px;
+    color: rgba(0, 80, 200, 0.7);
+    z-index: 100;
+}
+
+#disambiguation {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 140%;
+    height: 120%;
+    font-size: 30px;
+    color: rgba(0, 80, 200, 0.7);
+    z-index: 2;
+    display: none;
+}
+
+.sub {
+    width: 100%;
+    margin-left: 5px !important;
+    font-size: 14px !important;
+}
+
+.synsetContainer {
+    position: relative;
+    height: 100%;
+    width: 30%;
+    margin-left: 2% !important;
+    border-radius: 50%;
+    border: solid 3px rgba(0, 80, 200, 0.7) !important;
+    float: left;
+    box-shadow: 0px 0px 10px #888888;
+}
+
+.picture {
+    width: 50%;
+    height: 50%;
+}
+
+.picture img {
+    width: 100%;
+    height: 100%;
+}
+
+#lemonFruitPic {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 50%;
+    height: 50%;
+    z-index: 2;
+}
+
+#lemonCarPic {
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    width: 70%;
+    height: 70%;
+}
+
+#beanFruitPic {
+    position: absolute;
+    top: 8%;
+    left: 5%;
+    width: 50%;
+    height: 50%;
+    z-index: 2;
+}
+
+#beanDudePic {
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    width: 70%;
+    height: 70%;
+}
+
+#kidneyPic {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    height: 80%;
+}
+
+.similarity {
+    position: absolute;
+    opacity: 0;
+    left: 50%;
+    top: 20%;
+    font-size: 20px !important;
+}
+
+#lemonDudeSimilarity {
+    top: 50%;
+}
+
+#lemonKidneySimilarity {
+    top: 50%;
+}
+
+#carDudeSimilarity {
+    top: 80%;
+}
+
+
+.timeline {
+    width: 0%;
+    height: 3px;
+    margin-bottom: 6% !important;
+    background: rgba(0, 80, 200, 0.7);
+}
+
+.takt {
+    position: absolute;
+    top: -10px;
+    left: 0%;
+    height: 20px;
+    width: 2px;
+    opacity: 0;
+    background: rgba(0, 80, 200, 1);
+}
+
+.takt2 {
+    position: absolute;
+    top: 50px;
+    left: 0%;
+    height: 20px;
+    width: 2px;
+    opacity: 0;
+    background: rgba(0, 80, 200, 1);
+}
+
+.formular {
+    position: absolute;
+    top: -50px;
+    left: 0%;
+    height: 40px;
+    width: 40px;
+    opacity: 0;
+}
+
+.formular img {
+    width: 100%;
+    height: 100%;
+}
+
+.pic {
+    z-index: 1;
+    position: absolute;
+    left: -10%;
+    opacity: 0.3;
+}
+
+.back_pic {
+    z-index: 0;
+    position: absolute;
+    left: -10%;
+    opacity: 1;
+}
+
+.tables table {
+    float: left;
+    font-size: 0.55em;
+    margin:6px;
+}
+
+.tables table th {
+    text-align: center;
+}
+
+h1 {
+    color: gainsboro !important;
+}
+
+.box {
+    background-color: lightgrey;
+    border: 2px solid lightblue;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+}
+
+.definition {
+    background-color: lightgrey;
+    border: 2px solid lightblue !important;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+    margin: 0.5em 0.5em !important;
+    padding: 0.5em 1.5em !important;
+    text-align: left;
+}
+
+.definition p {
+    color: #586e75;
+    margin: auto;
+    text-align: left;
+    font-size: 0.7em;
+    word-wrap: break-word;
+}

@@ -1,53 +1,235 @@
 [
     "index.html",
     "the-landscape.html",
-    "problem-of-language.html",
-    "ckd-is-a-challenge.html",
-    "data.html",
+    "the-problem.html",
+    [
+        {
+            "filename": "problem-of-language.html",
+            "attr": {
+                "style":"top: 0px; display: block;",
+                "data-transition":"none"
+            }
+        },
+        {
+            "filename": "problem-of-language-2.html",
+            "attr": {
+                "style":"top: 0px; display: block;",
+                "data-transition":"none"
+            }
+        },
+        {
+            "filename": "problem-of-language-2b.html",
+            "attr": {
+                "style":"top: 0px; display: block;",
+                "data-transition":"none"
+            }
+        },
+        {
+            "filename": "problem-of-language-3.html",
+            "attr": {
+                "style":"top: 0px; display: block;",
+                "data-transition":"none"
+            }
+        }
+    ],
+    "the-problem-ckd.html",
+    "ckd.html",
+    "ckd-2.html",
+    {
+        "filename": "data-intro-1.html",
+        "attr" : {
+            "data-transition":"fade"
+        }
+    },
+    {
+        "filename": "data-intro-2.html",
+        "attr" : {
+            "data-background":"images/DavitaForumPicture.png",
+            "data-background-transition":"zoom",
+            "data-transition":"fade"
+        }
+    },
+    {
+        "filename": "data.html",
+        "attr" : {
+            "data-transition":"fade"
+        }
+    },
     "data-2.html",
     {
-        "filename":"methods.html",
+        "filename": "methods.html",
         "attr": {
-             "data-transition":"zoom"
-         }
-    },
-    "ontologies.html",
-    "relationships.html",
-    "steps-of-the-analysis.html",
-    {
-        "filename":"pre-processing-1.html",
-        "attr": {
-             "data-transition":"none"
-         }
+            "data-background": "#586e75"
+        }
     },
     {
-        "filename":"pre-processing-2.html",
+        "filename": "ontologies-0.html",
         "attr": {
-             "data-transition":"none"
-         }
+            "data-transition": "none",
+            "data-background": "images/ontology-wisdom-3.png",
+            "data-background-transition": "convex"
+        }
     },
     {
-        "filename":"pre-processing-3.html",
+        "filename": "ontologies-1.html",
         "attr": {
-             "data-transition":"none"
-         }
+            "data-transition": "none"
+        }
     },
     {
-        "filename":"pre-processing-4.html",
+        "filename": "ontologies-2.html",
         "attr": {
-             "data-transition":"none"
-         }
+            "data-transition": "none"
+        }
+    },
+    "wordnet.html",
+    "synset.html",
+    "semantic-relationships.html",
+    {
+        "filename": "semantic-relationships-2.html",
+        "attr" : {
+            "data-background": "images/DoctorPlot.png"
+        }
     },
     {
-        "filename":"pre-processing-5.html",
+        "filename": "steps-of-the-analysis.html",
         "attr": {
-             "data-transition":"none"
-         }
+            "data-background": "#586e75"
+        }
     },
-    "word-sense-disambiguation.html",
-    "merging-word-propagation.html",
-    "thresholding.html",
-    "analysis.html",
-    "results.html",
-    "results-2.html"
+    {
+        "filename": "pre-processing-1.html",
+        "attr": {
+            "data-transition": "none"
+        }
+    },
+    {
+        "filename": "pre-processing-2.html",
+        "attr": {
+            "data-transition": "none"
+        }
+    },
+    {
+        "filename": "pre-processing-3.html",
+        "attr": {
+            "data-transition": "none"
+        }
+    },
+    {
+        "filename": "pre-processing-4.html",
+        "attr": {
+            "data-transition": "none"
+        }
+    },
+    {
+        "filename": "pre-processing-5.html",
+        "attr": {
+            "data-transition": "none"
+        }
+    },
+    {
+        "filename": "word-sense-disambiguation.html",
+        "attr": {
+            "data-transition": "fade"
+        }
+    },
+    {
+        "filename":"word-sense-disambiguation-2.html",
+        "attr": {
+            "data-transition": "fade"
+        }
+    },
+    {
+        "filename":"word-sense-disambiguation-3.html",
+        "attr": {
+            "data-transition": "fade"
+        }
+    },
+    {
+        "filename":"word-sense-disambiguation-4.html",
+        "attr": {
+            "data-transition": "fade"
+        }
+    },
+    {
+        "filename":"word-sense-disambiguation-5.html",
+        "attr": {
+            "data-transition": "none"
+        }
+    },
+    {
+        "filename":"word-sense-disambiguation-6.html",
+        "attr": {
+            "data-transition": "none"
+        }
+    },
+    [
+        {
+            "filename":"disambiguation-performance.html",
+            "attr": {
+                "data-transition": "fade"
+            }
+        },
+        {
+            "filename":"disambiguation-performance-b.html",
+            "attr": {
+                "data-transition": "fade"
+            }
+        }
+    ],
+    {
+        "filename": "merging-word-propagation.html",
+        "attr": {
+            "data-transition": "fade"
+        }
+    },
+    {
+        "filename": "merging-word-propagation-2.html",
+        "attr": {
+            "data-transition": "fade"
+        }
+    },
+    {
+        "filename": "merging-word-propagation-3.html",
+        "attr": {
+            "data-transition": "fade"
+        }
+    },
+    {
+        "filename": "thresholding.html",
+        "attr": {
+            "data-transition": "fade"
+        }
+    },
+    {
+        "filename": "thresholding-2.html",
+        "attr": {
+            "data-transition": "fade"
+        }
+    },
+    {
+        "filename": "analysis.html",
+        "attr": {
+            "data-background": "#586e75"
+        }
+    },
+    "analysis-1.html",
+    [
+        "analysis-2.html",
+        "analysis-2b.html"
+    ],
+    "analysis-3.html",
+    {
+        "filename": "results.html",
+        "attr": {
+            "data-background": "#586e75"
+        }
+    },
+    "results-2.html",
+    "results-3.html",
+    "results-4.html",
+    "results-5.html",
+    "results-6.html",
+    "conclusion.html",
+    "end.html"
 ]

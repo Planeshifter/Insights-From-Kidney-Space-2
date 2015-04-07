@@ -149,7 +149,7 @@ $(document).ready( function() {
     }
 
     var counter = 0;
-    $("#disambiguationExample").click( function() {
+    $("#playWSD").click( function() {
         switch( counter ) {
             case 0:
                 $(".stopword").css("opacity", 0);
@@ -168,7 +168,7 @@ $(document).ready( function() {
         counter += 1;
     });
 
-    $("#timebar").click( function() {
+    $("#playTimebar").click( function() {
 
         function timelineDone(){
             var tl2 = new TimelineMax();
@@ -215,7 +215,10 @@ $(document).ready( function() {
 
     });
 
-    $("#landscape").click( function() {
+    $("#playLandscape").click( function() {
+
+
+        var $landscape = $("#landscape");
 
         var i, j, s, name, leftRandomPos, scaleSize, x, y, z, randomPos;
 
@@ -244,7 +247,7 @@ $(document).ready( function() {
         for ( i = 0; i < 3; i++ ) {
             name = "hospital_" + i;
             s = '<div class="pic" id="' + name + '"> <img class="bare" src="images/hospital2.svg"/> </div>';
-            $( this ).append( s );
+            $landscape.append( s );
             x = document.getElementById(name);
             hospitals.push( x );
             randomPos = parseInt( Math.random() * 90, 10 ) + "%";
@@ -280,7 +283,7 @@ $(document).ready( function() {
         for (j = 0; j < 20; j++ ) {
             name = "cloud_" + j;
             s = '<div class="pic" id="' + name + '"> <img class="bare" src="images/cloud.svg"/> </div>';
-            $( this ).append( s );
+            $landscape.append( s );
             x = document.getElementById(name);
             clouds.push( x );
             randomPos = parseInt( Math.random() * 80, 10 ) + "%";
@@ -305,7 +308,7 @@ $(document).ready( function() {
             var backName =  "back_" + name;
             s = '<div class="back_pic" id="' + backName + '"> <object id="' + backName + '_svg" class="bare" type="image/svg+xml" data="images/forum.svg"></object> </div>';
             s += '<div class="pic" id="' + name + '"> <img class="bare" src="images/cloud.svg"/> </div>';
-            $( this ).append( s );
+            $landscape.append( s );
             x = document.getElementById(name);
             y = document.getElementById(backName);
             z = document.getElementById(backName + "_svg");

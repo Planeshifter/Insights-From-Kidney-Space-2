@@ -1,6 +1,7 @@
 [
     "index.html",
     "the-landscape.html",
+    "the-landscape-2.html",
     {
         "filename": "the-problem.html",
         "attr" : {
@@ -243,7 +244,6 @@
     "results-3.html",
     "results-4.html",
     "results-5.html",
-    "results-6.html",
     {
         "filename": "conclusion.html",
         "attr": {

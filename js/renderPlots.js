@@ -4,7 +4,9 @@ $(document).ready(function(){
 
      $('#container1').highcharts({
       chart: {
-          type: 'column'
+          type: 'column',
+          width: 800,
+          height: 400
       },
       title: {
           text: 'Post Activity',
@@ -90,7 +92,9 @@ $(document).ready(function(){
 
           $('#container2').highcharts({
           chart: {
-              type: 'bar'
+              type: 'bar',
+              width: 960,
+              height: 600
           },
           title: {
               text: 'Most Frequent Synsets',

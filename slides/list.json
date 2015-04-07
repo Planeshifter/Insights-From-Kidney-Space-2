@@ -1,38 +1,18 @@
 [
     "index.html",
     "the-landscape.html",
-    "the-problem.html",
-    [
-        {
-            "filename": "problem-of-language.html",
-            "attr": {
-                "style":"top: 0px; display: block;",
-                "data-transition":"none"
-            }
-        },
-        {
-            "filename": "problem-of-language-2.html",
-            "attr": {
-                "style":"top: 0px; display: block;",
-                "data-transition":"none"
-            }
-        },
-        {
-            "filename": "problem-of-language-2b.html",
-            "attr": {
-                "style":"top: 0px; display: block;",
-                "data-transition":"none"
-            }
-        },
-        {
-            "filename": "problem-of-language-3.html",
-            "attr": {
-                "style":"top: 0px; display: block;",
-                "data-transition":"none"
-            }
+    {
+        "filename": "the-problem.html",
+        "attr" : {
+            "data-transition":"fade"
         }
-    ],
-    "the-problem-ckd.html",
+    },
+    {
+        "filename": "the-problem-ckd.html",
+        "attr" : {
+            "data-transition":"fade"
+        }
+    },
     "ckd.html",
     "ckd-2.html",
     {
@@ -56,6 +36,34 @@
         }
     },
     "data-2.html",
+    {
+        "filename": "problem-of-language.html",
+        "attr": {
+            "style":"top: 0px; display: block;",
+            "data-transition":"none"
+        }
+    },
+    {
+        "filename": "problem-of-language-2.html",
+        "attr": {
+            "style":"top: 0px; display: block;",
+            "data-transition":"none"
+        }
+    },
+    {
+        "filename": "problem-of-language-2b.html",
+        "attr": {
+            "style":"top: 0px; display: block;",
+            "data-transition":"none"
+        }
+    },
+    {
+        "filename": "problem-of-language-3.html",
+        "attr": {
+            "style":"top: 0px; display: block;",
+            "data-transition":"none"
+        }
+    },
     {
         "filename": "methods.html",
         "attr": {
@@ -95,6 +103,12 @@
         "filename": "steps-of-the-analysis.html",
         "attr": {
             "data-background": "#586e75"
+        }
+    },
+    {
+        "filename": "steps-of-the-analysis-2.html",
+        "attr": {
+            "data-transition": "fade"
         }
     },
     {
@@ -230,6 +244,22 @@
     "results-4.html",
     "results-5.html",
     "results-6.html",
-    "conclusion.html",
-    "end.html"
+    {
+        "filename": "conclusion.html",
+        "attr": {
+            "data-transition": "fade"
+        }
+    },
+    {
+        "filename": "conclusion-2.html",
+        "attr": {
+            "data-transition": "fade"
+        }
+    },
+    {
+        "filename": "end.html",
+        "attr": {
+            "data-transition": "fade"
+        }
+    }
 ]

@@ -1,42 +1,81 @@
-<h2 class="btn" id="playWSD" onclick="wsdAnimation()">Word Sense Disambiguation</h2>
-<div id="disambiguationExample">
-    <span id="lemon">Lemons</span>
-    <span class="stopword" id="and">and</span>
-    <span id="bean">beans</span>
-    <span class="stopword" id="are">are</span>
-    <span class="stopword" id="good">good</span>
-    <span class="stopword" id="for">for</span>
-    <span class="stopword" id="your">your</span>
-    <span id="kidney">kidneys.</span>
+<div style="background-color: #586e75; width: 100%; height: 400%; position: absolute; top: -100%; left: -50%; z-index: -1;">
 </div>
-<div id="disambiguation">
-    <div id="c1" class="synsetContainer">
-        <div id="lemonFruitPic" class="picture"><img class="bare" src="images/lemon_fruit.svg"/></div>
-        <div id="lemonCarPic" class="picture"><img class="bare" src="images/lemon_car.svg"/></div>
-        <div class="marker">$C_1$</div>
-        <div id="lemonSimilarity" class="similarity">$\operatorname{sim}() = 0.7$</div>
-        <div id="lemonDudeSimilarity" class="similarity">$\operatorname{sim}() = 0.3$</div>
-        <div id="lemonKidneySimilarity" class="similarity">$\operatorname{sim}() = 0.4$</div>
-        <div id="carDudeSimilarity" class="similarity">$\operatorname{sim}() = 0.4$</div>
+
+<div>
+    <div style="width: 50%; display: inline-block;">
     </div>
-    <div id="c2" class="synsetContainer">
-        <div id="beanFruitPic" class="picture"><img class="bare" src="images/bean_fruit.svg"/></div>
-        <div id="beanDudePic" class="picture"><img class="bare" src="images/bean.svg"/></div>
-        <div class="marker">$C_2$</div>
-    </div>
-    <div id="c3" class="synsetContainer">
-        <div id="kidneyPic" class="picture"><img class="bare" src="images/kidney.svg"/></div>
-        <div class="marker">$C_3$</div>
+    <div style="width: 40%; display: inline-block; vertical-align: top;">
     </div>
 </div>
 
-<div id="disambiguationEquation">
-$$
-\hat c_i = \arg \max_{c_{1} \in C_i} \sum_{w_j \in \mathcal{W}(i)} \max_{c_{2}\in C_j} \operatorname{sim} \left( c_{1}, c_{2} \right)
-$$
-</div>
-<div id="disambiguationEquationColored" style="display:none;">
-$$
-\hat c_i = \arg {\color{lorange}\max_{c_{1} \in C_i}} \sum_{w_j \in \mathcal{W}(i)} \max_{c_{2}\in C_j} \operatorname{sim} \left( c_{1}, c_{2} \right)
-$$
+<div>
+    <div style="color: gainsboro; width: 50%; display: inline-block; margin-left: -20%;">
+        <h3 style="color:gainsboro; left: -20%">Word Sense Disambiguation</h3>
+        <p style="text-align:left">
+            For each word $w_i$, we wish to infer its correct synset $c_i$ from candidate set $C_i = \{ c : w_i \in c \}$.
+        </p>
+        <div class="fragment">
+            <p style="text-align:left">
+                Similar to approach by Fodeh et al., estimate $c_i$ as
+            </p>
+            <div id="disambiguationEquation">
+            $$
+            \hat c_i = \arg \max_{c_{1} \in C_i} \sum_{w_j \in \mathcal{W}(i)} \max_{c_{2}\in C_j} \operatorname{sim} \left( c_{1}, c_{2} \right)
+            $$
+            </div>
+            <div id="disambiguationEquationColored" style="display:none;">
+            $$
+            \hat c_i = {\color{lorange} \arg\max_{c_{1} \in C_i}} \sum_{w_j \in \mathcal{W}(i)} \max_{c_{2}\in C_j} \operatorname{sim} \left( c_{1}, c_{2} \right)
+            $$
+            </div>
+            <div id="disambiguationEquationColored2" style="display:none;">
+            $$
+            \hat c_i = {\color{lorange} \arg \max_{c_{1} \in C_i}} \sum_{w_j \in \mathcal{W}(i)} {\color{lblue} \max_{c_{2}\in C_j} } \operatorname{sim} \left( c_{1}, c_{2} \right)
+            $$
+            </div>
+            <p style="font-size: 0.5em;text-align:left">
+                Fodeh, S., Punch, B., & Tan, P.-N. (2011). On ontology-driven document clustering using core semantic features. Knowledge and Information Systems, 28(2), 395–421.
+            </p>
+        </div>
+    </div>
+    <div style="width: 45%; display: inline-block; vertical-align: top; margin-left: 20%;">
+        <div class="fragment" id="nav">
+            <ul>
+                <li><a>Animation:</a></li>
+                <li><a id="playWSD" onclick="wsdAnimation()">Simple</a></li>
+                <li><a class="btn" id="playWSDFull" onclick="wsdAnimationFull()">Full</a></li>
+            </ul>
+        </div>
+        <div class="fragment" id="disambiguationExample">
+            <span id="lemon">Lemons</span>
+            <span class="stopword" id="and">and</span>
+            <span id="bean">beans</span>
+            <span class="stopword" id="are">are</span>
+            <span class="stopword" id="good">good</span>
+            <span class="stopword" id="for">for</span>
+            <span class="stopword" id="your">your</span>
+            <span id="kidney">kidneys.</span>
+        </div>
+        <div id="disambiguation">
+            <div id="c1" class="synsetContainer">
+                <div id="lemonFruitPic" class="picture"><img class="bare" src="images/lemon_fruit.svg"/></div>
+                <div id="lemonCarPic" class="picture"><img class="bare" src="images/lemon_car.svg"/></div>
+                <div class="marker">$C_1$</div>
+                <div id="lemonSimilarity" class="similarity">$\operatorname{sim}() = 0.7$</div>
+                <div id="lemonDudeSimilarity" class="similarity">$\operatorname{sim}() = 0.3$</div>
+                <div id="lemonKidneySimilarity" class="similarity">$\operatorname{sim}() = 0.4$</div>
+                <div id="carDudeSimilarity" class="similarity">$\operatorname{sim}() = 0.4$</div>
+            </div>
+            <div id="c2" class="synsetContainer">
+                <div id="beanFruitPic" class="picture"><img class="bare" src="images/bean_fruit.svg"/></div>
+                <div id="beanDudePic" class="picture"><img class="bare" src="images/bean.svg"/></div>
+                <div class="marker">$C_2$</div>
+            </div>
+            <div id="c3" class="synsetContainer">
+                <div id="kidneyPic" class="picture"><img class="bare" src="images/kidney.svg"/></div>
+                <div class="marker">$C_3$</div>
+            </div>
+        </div>
+
+    </div>
 </div>

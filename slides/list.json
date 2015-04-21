@@ -1,13 +1,13 @@
 [
     "index.html",
     "the-landscape.html",
-    "the-landscape-2.html",
     {
         "filename": "the-problem.html",
         "attr" : {
             "data-transition":"fade"
         }
     },
+    "the-landscape-2.html",
     {
         "filename": "the-problem-ckd.html",
         "attr" : {
@@ -211,18 +211,6 @@
         }
     },
     {
-        "filename": "thresholding.html",
-        "attr": {
-            "data-transition": "fade"
-        }
-    },
-    {
-        "filename": "thresholding-2.html",
-        "attr": {
-            "data-transition": "fade"
-        }
-    },
-    {
         "filename": "analysis.html",
         "attr": {
             "data-background": "#586e75"
@@ -261,5 +249,19 @@
         "attr": {
             "data-transition": "fade"
         }
-    }
+    },
+    [
+        {
+            "filename": "thresholding.html",
+            "attr": {
+                "data-transition": "fade"
+            }
+        },
+        {
+            "filename": "thresholding-2.html",
+            "attr": {
+                "data-transition": "fade"
+            }
+        }
+    ]
 ]

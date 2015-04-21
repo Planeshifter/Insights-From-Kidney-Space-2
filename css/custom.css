@@ -23,9 +23,9 @@
 
 #disambiguationExample {
     position: absolute;
-    width: 100%;
+    width: 70%;
     text-align: center;
-    top: 100%;
+    top: 35%;
     height: 40%;
     font-size: 30px;
     color: rgba(0, 80, 200, 0.7);
@@ -34,10 +34,10 @@
 
 #disambiguation {
     position: absolute;
-    width: 100%;
+    width: 70%;
     text-align: center;
-    top: 140%;
-    height: 120%;
+    top: 50%;
+    height: 40%;
     font-size: 30px;
     color: rgba(0, 80, 200, 0.7);
     z-index: 2;
@@ -134,7 +134,7 @@
 }
 
 .btn {
-
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -142,6 +142,39 @@
     text-decoration: none;
 }
 
+
+nav {
+    list-style:none;
+    margin-bottom:10px;
+    width:100%;
+    text-align: center;
+}
+
+#nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display:inline-block;
+}
+
+#nav li {
+    margin: 0;
+    padding: 0;
+    display:inline;
+}
+#nav li a {
+    padding: 10px;
+    text-decoration: none;
+    color: gainsboro    ;
+    background-color: #586e75;
+    float:left;
+    cursor: pointer;
+}
+
+#nav li a:hover {
+    color: #FFFFFF;
+    background-color: #35af3b;
+}
 
 .timeline {
     width: 0%;

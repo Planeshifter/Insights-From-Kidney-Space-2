@@ -1,11 +1,21 @@
 [
     "index.html",
-    "the-landscape.html",
-    "the-landscape-2.html",
+    {
+        "filename":"the-landscape.html",
+        "attr": {
+            "data-state":"landscape1"
+        }
+    },
     {
         "filename": "the-problem.html",
         "attr" : {
             "data-transition":"fade"
+        }
+    },
+    {
+        "filename":"the-landscape-2.html",
+        "attr": {
+            "data-state":"landscape2"
         }
     },
     {
@@ -211,18 +221,6 @@
         }
     },
     {
-        "filename": "thresholding.html",
-        "attr": {
-            "data-transition": "fade"
-        }
-    },
-    {
-        "filename": "thresholding-2.html",
-        "attr": {
-            "data-transition": "fade"
-        }
-    },
-    {
         "filename": "analysis.html",
         "attr": {
             "data-background": "#586e75"
@@ -237,13 +235,34 @@
     {
         "filename": "results.html",
         "attr": {
-            "data-background": "#586e75"
+            "data-background": "#586e75",
+            "data-transiiton":"fade"
         }
     },
-    "results-2.html",
-    "results-3.html",
-    "results-4.html",
-    "results-5.html",
+    {
+        "filename":"results-2.html",
+        "attr": {
+            "data-transition": "fade"
+        }
+    },
+    {
+        "filename":"results-3.html",
+        "attr": {
+            "data-transition": "fade"
+        }
+    },
+    {
+        "filename":"results-4.html",
+        "attr": {
+            "data-transition": "fade"
+        }
+    },
+    {
+        "filename":"results-5.html",
+        "attr": {
+            "data-transition": "fade"
+        }
+    },
     {
         "filename": "conclusion.html",
         "attr": {
@@ -261,5 +280,19 @@
         "attr": {
             "data-transition": "fade"
         }
-    }
+    },
+    [
+        {
+            "filename": "thresholding.html",
+            "attr": {
+                "data-transition": "fade"
+            }
+        },
+        {
+            "filename": "thresholding-2.html",
+            "attr": {
+                "data-transition": "fade"
+            }
+        }
+    ]
 ]

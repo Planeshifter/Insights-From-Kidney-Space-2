@@ -51,15 +51,7 @@
                 
                     
                         
-    <section data-html="slides/the-landscape.html"></section>
-
-
-                    
-                    
-                
-                    
-                        
-    <section data-html="slides/the-landscape-2.html"></section>
+    <section data-state="landscape1" data-html="slides/the-landscape.html"></section>
 
 
                     
@@ -68,6 +60,14 @@
                     
                         
     <section data-transition="fade" data-html="slides/the-problem.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-state="landscape2" data-html="slides/the-landscape-2.html"></section>
 
 
                     
@@ -372,22 +372,6 @@
                 
                     
                         
-    <section data-transition="fade" data-html="slides/thresholding.html"></section>
-
-
-                    
-                    
-                
-                    
-                        
-    <section data-transition="fade" data-html="slides/thresholding-2.html"></section>
-
-
-                    
-                    
-                
-                    
-                        
     <section data-background="#586e75" data-html="slides/analysis.html"></section>
 
 
@@ -429,7 +413,7 @@
                 
                     
                         
-    <section data-background="#586e75" data-html="slides/results.html"></section>
+    <section data-background="#586e75" data-transiiton="fade" data-html="slides/results.html"></section>
 
 
                     
@@ -437,7 +421,7 @@
                 
                     
                         
-    <section data-html="slides/results-2.html"></section>
+    <section data-transition="fade" data-html="slides/results-2.html"></section>
 
 
                     
@@ -445,7 +429,7 @@
                 
                     
                         
-    <section data-html="slides/results-3.html"></section>
+    <section data-transition="fade" data-html="slides/results-3.html"></section>
 
 
                     
@@ -453,7 +437,7 @@
                 
                     
                         
-    <section data-html="slides/results-4.html"></section>
+    <section data-transition="fade" data-html="slides/results-4.html"></section>
 
 
                     
@@ -461,7 +445,7 @@
                 
                     
                         
-    <section data-html="slides/results-5.html"></section>
+    <section data-transition="fade" data-html="slides/results-5.html"></section>
 
 
                     
@@ -489,6 +473,23 @@
 
 
                     
+                    
+                
+                    
+                    
+                        <section data-background-transition="fade">
+                            
+                                
+    <section data-transition="fade" data-html="slides/thresholding.html"></section>
+
+
+                            
+                                
+    <section data-transition="fade" data-html="slides/thresholding-2.html"></section>
+
+
+                            
+                        </section>
                     
                 
             </div>
@@ -532,6 +533,23 @@
 
                 ]
             });
+
+            var landscape1Done = false;
+            Reveal.addEventListener( 'landscape1', function() {
+                if ( landscape1Done === false ) {
+                    landscapeAnimation();
+                    landscape1Done = true;
+                }
+            }, false );
+
+            var landscape2Done = false;
+            Reveal.addEventListener( 'landscape2', function() {
+                if ( landscape2Done === false ) {
+                    timebarAnimation();
+                    landscape2Done = true;
+                }
+            }, false );
+
         </script>
         <script type="text/javascript" src="bower_components/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script type="text/x-mathjax-config">

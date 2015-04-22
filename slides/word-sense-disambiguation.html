@@ -46,7 +46,7 @@
                 <li><a class="btn" id="playWSDFull" onclick="wsdAnimationFull()">Full</a></li>
             </ul>
         </div>
-        <div class="fragment" id="disambiguationExample">
+        <div id="disambiguationExample">
             <span id="lemon">Lemons</span>
             <span class="stopword" id="and">and</span>
             <span id="bean">beans</span>
@@ -79,3 +79,15 @@
 
     </div>
 </div>
+
+<aside class="notes">
+    In order to map words to their correct synsets, we have to do word sense disambiguation, i.e. for each word
+    $w_i$ we have to choose the correct synset out of all synsets the word in question belongs to.
+    Consider the example sentence on the right: The word lemon has different meanings, it can refer to the fruit as well as
+    to a defective automobile.
+    In this example, we would like to choose the fruit synset.
+    In order to accomplish this, we have adapted the method proposed by Fodeh
+    et al. and estimate for each word $w_i$ its concept $c_i$ as the argument
+    which maximizes the sum of similarities with the other synsets in its context,
+    where we use the sentence as our context.
+</aside>

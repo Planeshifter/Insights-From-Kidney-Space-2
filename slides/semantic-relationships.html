@@ -1,12 +1,21 @@
-<h2>Synset Relationships: Using WordNet’s Lexical Hierarchy</h2>
-<p style="text-align:left" class="fragment">Contains hierarchy of concepts, ranging from very general ({entity}, {state}) to moderately abstract ({person, individual}) to very specific ({doctor, doc, physician}).</p>
-<p style="text-align:left" class="fragment">Some terminology: For a given synset, its. . .
-    <ul class="fragment">
-        <li><b>hypernyms</b> are the synsets that are more general</li>
-        <li><b>hyponyms</b> are the synsets that are more specific</li>
-    </ul>
-</p>
-<p style="text-align:left" class="fragment">Hyponyms have an “Is-A" relationship to their hypernyms.</p>
+<div style="background-color: #586e75; width: 100%; height: 400%; position: absolute; top: -100%; left: -50%; z-index: -1;">
+</div>
+
+<div>
+    <div style="color: gainsboro; width: 50%; display: inline-block; margin-left: -20%;">
+        <h3 style="color:gainsboro; left: -20%; text-align: left;">Using WordNet’s Lexical Hierarchy</h3>
+        <p style="text-align:left" class="fragment">Some terminology: For a given synset, its. . .
+            <ul>
+                <li class="fragment"><b>hypernyms</b> are the synsets that are more general</li>
+                <li class="fragment"><b>hyponyms</b> are the synsets that are more specific</li>
+            </ul>
+        </p>
+        <p style="text-align:left" class="fragment">Hyponyms have an “Is-A" relationship to their hypernyms.</p>
+    </div>
+    <div style="width: 45%; display: inline-block; vertical-align: top; margin-left: 20%;">
+        <img class="bare" src="./images/Doctor.png" style="margin-top: 40%"/>
+    </div>
+</div>
 
 <aside class="notes">
     However, synsets in WordNet are not isolated entities, but related to each other.
@@ -15,5 +24,5 @@
     For example, if we take the doctor synset, we know that a doctor is a health-care professional.
     We call the health-care professional a hypernym of the doctor. On the other hand, we know that the health-professional is not necessarily a doctor,
     but could also be a nurse or a physical therapist. Logically, doctor, nurse, and physical therapists are hyponyms of the health-care professional.
-    WordNet encodes such "is-A" relationships for all its synsets, ranging from the specific to the most general. 
+    WordNet encodes such "is-A" relationships for all its synsets, ranging from the specific to the most general.
 </aside>

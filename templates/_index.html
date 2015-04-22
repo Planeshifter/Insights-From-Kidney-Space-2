@@ -93,6 +93,23 @@
 
                 ]
             });
+
+            var landscape1Done = false;
+            Reveal.addEventListener( 'landscape1', function() {
+                if ( landscape1Done === false ) {
+                    landscapeAnimation();
+                    landscape1Done = true;
+                }
+            }, false );
+
+            var landscape2Done = false;
+            Reveal.addEventListener( 'landscape2', function() {
+                if ( landscape2Done === false ) {
+                    timebarAnimation();
+                    landscape2Done = true;
+                }
+            }, false );
+
         </script>
         <script type="text/javascript" src="bower_components/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script type="text/x-mathjax-config">

@@ -1,3 +1,17 @@
-<h2>Merging & Word Propagation</h2>
+<h2>Merging</h2>
 
 <img class="bare" src="images/MergingStep3.png" alt="Merging Step" style="width:943px;height:537px;">
+
+<aside class="notes">
+    Merging them together, we obtain a tree like this. Now we can
+    focus our attention, for example if we are interested in fruits,
+    we would find that the document contains one orange and one lemon.
+    Such a synthesis would be impossible on the level of word token analysis.
+    Obviously, this is a very simplified illustration. Imagine that we have ten-thousands
+    of synsets spanning thousands of documents. Merging all these, we create a gigantic
+    super-tree for our whole document collection, which works as a search engine
+    for our corpus: Assume that we are interested in the types of disease symptoms people
+    talk about. Since we also keep track of the word frequencies,
+    we would find that 1195 people talk about unspecific pain, 195 about nausea, 174 about cramps
+    and 109 about edemata.
+</aside>

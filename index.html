@@ -211,7 +211,15 @@
                 
                     
                         
-    <section data-html="slides/semantic-relationships.html"></section>
+    <section data-transition="fade" data-html="slides/semantic-relationships-0.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-transition="fade" data-html="slides/semantic-relationships-1.html"></section>
 
 
                     
@@ -348,7 +356,15 @@
                 
                     
                         
-    <section data-transition="fade" data-html="slides/merging-word-propagation.html"></section>
+    <section data-background="#586e75" data-html="slides/merging-word-propagation-0.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-transition="fade" data-html="slides/merging-word-propagation-1.html"></section>
 
 
                     
@@ -405,7 +421,7 @@
                 
                     
                         
-    <section data-html="slides/analysis-3.html"></section>
+    <section data-transition="fade" data-html="slides/analysis-3.html"></section>
 
 
                     
@@ -413,7 +429,15 @@
                 
                     
                         
-    <section data-background="#586e75" data-transiiton="fade" data-html="slides/results.html"></section>
+    <section data-transition="fade" data-html="slides/analysis-4.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-background="#586e75" data-transition="fade" data-html="slides/results.html"></section>
 
 
                     
@@ -470,6 +494,14 @@
                     
                         
     <section data-transition="fade" data-html="slides/end.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-transition="fade" data-background="./images/johannes.jpg" data-state="end2" data-html="slides/end-2.html"></section>
 
 
                     
@@ -549,6 +581,14 @@
                     landscape2Done = true;
                 }
             }, false );
+
+            var end2Done = false;
+            Reveal.addEventListener( 'end2', function() {
+                if ( end2Done === false ) {
+                    endAnimation();
+                    end2Done = true;
+                }
+            })
 
         </script>
         <script type="text/javascript" src="bower_components/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>

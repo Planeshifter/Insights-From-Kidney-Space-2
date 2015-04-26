@@ -103,7 +103,18 @@
     },
     "wordnet.html",
     "synset.html",
-    "semantic-relationships.html",
+    {
+        "filename": "semantic-relationships-0.html",
+        "attr": {
+            "data-transition": "fade"
+        }
+    },
+    {
+        "filename": "semantic-relationships-1.html",
+        "attr": {
+            "data-transition": "fade"
+        }
+    },
     {
         "filename": "semantic-relationships-2.html",
         "attr" : {
@@ -203,7 +214,13 @@
         }
     ],
     {
-        "filename": "merging-word-propagation.html",
+        "filename": "merging-word-propagation-0.html",
+        "attr": {
+            "data-background": "#586e75"
+        }
+    },
+    {
+        "filename": "merging-word-propagation-1.html",
         "attr": {
             "data-transition": "fade"
         }
@@ -231,12 +248,23 @@
         "analysis-2.html",
         "analysis-2b.html"
     ],
-    "analysis-3.html",
+    {
+        "filename": "analysis-3.html",
+        "attr": {
+            "data-transition":"fade"
+        }
+    },
+    {
+        "filename": "analysis-4.html",
+        "attr": {
+            "data-transition":"fade"
+        }
+    },
     {
         "filename": "results.html",
         "attr": {
             "data-background": "#586e75",
-            "data-transiiton":"fade"
+            "data-transition":"fade"
         }
     },
     {
@@ -279,6 +307,14 @@
         "filename": "end.html",
         "attr": {
             "data-transition": "fade"
+        }
+    },
+    {
+        "filename": "end-2.html",
+        "attr": {
+            "data-transition": "fade",
+            "data-background": "./images/johannes.jpg",
+            "data-state":"end2"
         }
     },
     [

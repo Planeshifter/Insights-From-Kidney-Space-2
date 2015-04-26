@@ -24,10 +24,10 @@
 #disambiguationExample {
     position: absolute;
     width: 70%;
-    text-align: center;
+    text-align: left;
     top: 35%;
     height: 40%;
-    font-size: 30px;
+    font-size: 20px;
     color: rgba(0, 80, 200, 0.7);
     z-index: 100;
 }
@@ -52,8 +52,8 @@
 
 .synsetContainer {
     position: relative;
-    height: 100%;
-    width: 30%;
+    height: 80%;
+    width: 22%;
     margin-left: 2% !important;
     border-radius: 50%;
     border: solid 3px rgba(0, 80, 200, 0.7) !important;
@@ -165,7 +165,8 @@ nav {
 #nav li a {
     padding: 10px;
     text-decoration: none;
-    color: gainsboro    ;
+    font-size: 0.7em;
+    color: gainsboro;
     background-color: #586e75;
     float:left;
     cursor: pointer;

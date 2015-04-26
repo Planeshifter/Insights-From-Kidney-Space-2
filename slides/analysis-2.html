@@ -15,3 +15,19 @@
         $</li>
     </ul>
 </div>
+<div class="fragment">
+    <p style="text-align:left">
+        Other possibilities: Mutual information, Jaccard similarity coefficient.
+    </p>
+</div>
+
+<aside class="notes">
+    In the bivariate analysis, we are interested in the
+    co-occurrence of synsets, i.e. their interaction fields.
+    Specifically, we look at the Pearson correlation between
+    binary indicator random variables $X_i$ and $Y_i$, where each of them
+    takes the value one if the respective synset appears in document $i$
+    and zero otherwise. There are other approaches, for example one could use mutual
+    information, which did not produce results as valuable as the Pearson correlation.
+    Another promising approach would be to use the Jaccard similarity coefficient.
+</aside>

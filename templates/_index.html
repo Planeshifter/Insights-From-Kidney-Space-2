@@ -110,6 +110,14 @@
                 }
             }, false );
 
+            var end2Done = false;
+            Reveal.addEventListener( 'end2', function() {
+                if ( end2Done === false ) {
+                    endAnimation();
+                    end2Done = true;
+                }
+            })
+
         </script>
         <script type="text/javascript" src="bower_components/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script type="text/x-mathjax-config">

@@ -68,13 +68,18 @@
             "data-transition":"none"
         }
     },
-    {
-        "filename": "problem-of-language-3.html",
-        "attr": {
-            "style":"top: 0px; display: block;",
-            "data-transition":"none"
+    [
+        {
+            "filename": "problem-of-language-3.html",
+            "attr": {
+                "style":"top: 0px; display: block;",
+                "data-transition":"none"
+            }
+        },
+        {
+            "filename": "spellcheck.html"
         }
-    },
+    ],
     {
         "filename": "methods.html",
         "attr": {

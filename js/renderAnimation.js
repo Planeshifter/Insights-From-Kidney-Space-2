@@ -369,8 +369,8 @@ function landscapeAnimation() {
     }
 
     tl.to(hospitals, 2, {rotation: 0 }, "start");
-    tl.staggerTo(clouds, 5, {opacity: 1, delay: 4}, 0.2);
-    tl.to(forums, 5, {opacity: 0.7, scale: 2, delay: 2}, "end");
+    tl.staggerTo(clouds, 5, {opacity: 1, delay: 3}, 0.2);
+    tl.to(forums, 5, {opacity: 0.7, scale: 2, delay: 1}, "end");
 
     window.setTimeout(function(){
         svgs = svgs.map( function(svg) {

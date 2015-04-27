@@ -40,12 +40,20 @@
             "data-transition":"fade"
         }
     },
-    {
-        "filename": "data.html",
-        "attr" : {
-            "data-transition":"fade"
+    [
+        {
+            "filename": "data-1.html",
+            "attr" : {
+                "data-transition":"fade"
+            }
+        },
+        {
+            "filename": "data-1b.html",
+            "attr" : {
+                "data-transition":"fade"
+            }
         }
-    },
+    ],
     "data-2.html",
     {
         "filename": "problem-of-language.html",

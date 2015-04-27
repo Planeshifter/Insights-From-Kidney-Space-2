@@ -152,7 +152,7 @@ function startDisambiguation() {
     var dude = document.getElementById("beanDudePic");
 
     var auto = document.getElementById("lemonCarPic");
-    tl.to( auto, 1, {opacity: 0, delay:  3}, "one");
+    tl.to( auto, 1, {opacity: 0, delay:  4}, "one");
 
     var threeTime = 3;
 

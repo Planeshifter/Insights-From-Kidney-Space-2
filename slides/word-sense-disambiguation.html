@@ -9,7 +9,7 @@
 </div>
 
 <div>
-    <div style="color: gainsboro; width: 50%; display: inline-block; margin-left: -4%; font-size: 0.8em;">
+    <div style="color: gainsboro; width: 50%; display: inline-block; margin-left: -4%; font-size: 0.9em;">
         <h3 style="color:gainsboro; left: -10%">Word Sense Disambiguation</h3>
         <p style="text-align:left">
             For each word $w_i$, we wish to infer its correct synset $c_i$ from candidate set $C_i = \{ c : w_i \in c \}$.
@@ -18,20 +18,22 @@
             <p style="text-align:left">
                 Similar to approach by Fodeh et al., estimate $c_i$ as
             </p>
-            <div id="disambiguationEquation">
-            $$
-            \hat c_i = \arg \max_{c_{1} \in C_i} \sum_{w_j \in \mathcal{W}(i)} \max_{c_{2}\in C_j} \operatorname{sim} \left( c_{1}, c_{2} \right)
-            $$
-            </div>
-            <div id="disambiguationEquationColored" style="display:none;">
-            $$
-            \hat c_i = {\color{lorange} \arg\max_{c_{1} \in C_i}} \sum_{w_j \in \mathcal{W}(i)} \max_{c_{2}\in C_j} \operatorname{sim} \left( c_{1}, c_{2} \right)
-            $$
-            </div>
-            <div id="disambiguationEquationColored2" style="display:none;">
-            $$
-            \hat c_i = {\color{lorange} \arg \max_{c_{1} \in C_i}} \sum_{w_j \in \mathcal{W}(i)} {\color{lblue} \max_{c_{2}\in C_j} } \operatorname{sim} \left( c_{1}, c_{2} \right)
-            $$
+            <div style="font-size: 0.8em">
+                <div id="disambiguationEquation">
+                $$
+                \hat c_i = \arg \max_{c_{1} \in C_i} \sum_{w_j \in \mathcal{W}(i)} \max_{c_{2}\in C_j} \operatorname{sim} \left( c_{1}, c_{2} \right)
+                $$
+                </div>
+                <div id="disambiguationEquationColored" style="display:none;">
+                $$
+                \hat c_i = {\color{lorange} \arg\max_{c_{1} \in C_i}} \sum_{w_j \in \mathcal{W}(i)} \max_{c_{2}\in C_j} \operatorname{sim} \left( c_{1}, c_{2} \right)
+                $$
+                </div>
+                <div id="disambiguationEquationColored2" style="display:none;">
+                $$
+                \hat c_i = {\color{lorange} \arg \max_{c_{1} \in C_i}} \sum_{w_j \in \mathcal{W}(i)} {\color{lblue} \max_{c_{2}\in C_j} } \operatorname{sim} \left( c_{1}, c_{2} \right)
+                $$
+                </div>
             </div>
             <p style="font-size: 0.5em;text-align:left">
                 Fodeh, S., Punch, B., & Tan, P.-N. (2011). On ontology-driven document clustering using core semantic features. Knowledge and Information Systems, 28(2), 395–421.
